@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Kozmira · Paylaşım masası</title>
+<title>Riduna · Paylaşım masası</title>
 <!--
   Ekip için: günün videosunun TikTok ve YouTube metinleri tek dokunuşla kopyalanır (TikTok video taslağına açıklama
   API ile eklenemiyor). Veri: media dalındaki plan.json (npm run studyo -- yayinla yükler). Arama motorlarına kapalı.
@@ -44,7 +44,7 @@
 <script>
 const PLAN = 'https://raw.githubusercontent.com/kozmira/kozmira.github.io/media/plan.json';
 // scripts/sosyal/tiktok.mjs ile aynı: Instagram etiketleri yerine TikTok etiketleri
-const TT_TAGS = '#astroloji #burçlar #astrolojitiktok #burcyorumlari #kozmira';
+const TT_TAGS = '#astroloji #burçlar #astrolojitiktok #burcyorumlari #riduna';
 const tiktokText = (caption) => caption.split('\n').filter((l) => !l.trim().startsWith('#')).join('\n').trim() + '\n\n' + TT_TAGS;
 const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Istanbul' }).format(new Date());
 const nice = (d) => new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', weekday: 'long' }).format(new Date(d + 'T12:00:00'));
