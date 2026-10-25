@@ -3,10 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=localStorage.getItem('tema');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
 <title>Riduna Gizlilik Politikası</title>
 <meta name="description" content="Riduna hiçbir kişisel bilgi toplamaz; bütün bilgiler yalnızca cihazında kalır.">
 <style>
-  :root { --bg: #0B0A1F; --card: #17153A; --line: #2E2A63; --text: #F2EFFF; --muted: #B9B4DA; --gold: #E8C872; }
+  :root { --bg: #0B0A1F; --card: #17153A; --line: #2E2A63; --text: #F2EFFF; --muted: #B9B4DA; --gold: #E8C872; color-scheme: dark; }
+  /* açık tema: ana sayfadaki düğmeyle seçilen (localStorage tema) ya da cihazın gündüz ayarı */
+  :root[data-theme=light] { --bg: #F6F2EA; --card: #FFFFFF; --line: #E2DBEC; --text: #1F1B3D; --muted: #5E587E; --gold: #946A12; color-scheme: light; }
+  @media (prefers-color-scheme: light) { :root:not([data-theme=dark]) { --bg: #F6F2EA; --card: #FFFFFF; --line: #E2DBEC; --text: #1F1B3D; --muted: #5E587E; --gold: #946A12; color-scheme: light; } }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.65 system-ui, -apple-system, 'Segoe UI', sans-serif; }
   main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
