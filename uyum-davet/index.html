@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uyumumuza bak 💞 · Kozmira</title>
+<meta name="description" content="Arkadaşın seni Kozmira'da uyuma davet etti: burcunu seç, aşk, arkadaşlık ve iletişim uyumunuzu gör.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kozmira">
+<meta property="og:title" content="Uyumumuza bak 💞">
+<meta property="og:description" content="Burcunu seç, aşk, arkadaşlık ve iletişim uyumumuzu gör. Kozmira">
+<meta property="og:image" content="https://kozmira.github.io/uyum-davet/kozmira.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0B0A1F">
+<link rel="icon" href="kozmira.png">
+<style>
+  :root { --bg: #0B0A1F; --card: #17153A; --line: #2E2A63; --text: #F2EFFF; --muted: #B9B4DA; --gold: #E8C872; --gold-deep: #C9A54E; --pink: #F28FB5; --teal: #6FD6C8; --sky: #7FC4F5;
+    --fire: #F2766B; --earth: #9BCB7B; --air: #7FC4F5; --water: #8B7FF5; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body { background: radial-gradient(120% 70% at 50% 0%, #2A1F5E 0%, #14113A 45%, var(--bg) 100%) fixed, var(--bg); color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  .sky { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+  .sky i { position: absolute; width: 2px; height: 2px; border-radius: 50%; background: #fff; opacity: .5; animation: twinkle 4s ease-in-out infinite; }
+  @keyframes twinkle { 50% { opacity: .1; } }
+  @media (prefers-reduced-motion: reduce) { .sky i { animation: none; } }
+  main { position: relative; z-index: 1; max-width: 480px; margin: 0 auto; padding: 40px 16px 48px; text-align: center; }
+  .logo { width: 64px; height: 64px; border-radius: 16px; box-shadow: 0 12px 40px rgba(232, 200, 114, .18), 0 0 0 1px var(--line); }
+  .brand { display: block; margin: 10px 0 24px; color: var(--gold); font-weight: 700; letter-spacing: .32em; font-size: 13px; }
+  h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-size: 30px; line-height: 1.25; margin: 0 0 20px; overflow-wrap: anywhere; }
+  .lead { color: var(--muted); margin: 0 auto 18px; max-width: 380px; }
+  .pair { display: flex; align-items: center; justify-content: center; gap: 18px; margin-bottom: 22px; }
+  .person { width: 120px; display: grid; justify-items: center; gap: 4px; }
+  .badge { width: 76px; height: 76px; border-radius: 50%; display: grid; place-items: center; font-size: 38px; border: 1px solid var(--line); background: rgba(23, 21, 58, .85); }
+  .person b { font-size: 15px; max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .person small { color: var(--muted); font-size: 13px; }
+  .heart { font-size: 26px; }
+  .signs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .signs button { font: inherit; color: var(--text); background: rgba(23, 21, 58, .85); border: 1px solid var(--line); border-radius: 14px; padding: 10px 4px; cursor: pointer; display: grid; gap: 2px; }
+  .signs button span { font-size: 24px; line-height: 1.2; }
+  .signs button small { font-size: 13px; color: var(--muted); }
+  .signs button:focus-visible, .btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .card { background: rgba(23, 21, 58, .85); border: 1px solid var(--line); border-radius: 20px; padding: 22px 20px; margin-bottom: 16px; text-align: left; backdrop-filter: blur(6px); }
+  .percent { text-align: center; font-size: 52px; font-weight: 900; line-height: 1.1; }
+  .tier { text-align: center; color: var(--pink); font-weight: 700; margin-bottom: 14px; }
+  .bar { margin-top: 10px; }
+  .bar div:first-child { display: flex; justify-content: space-between; font-size: 14px; color: var(--muted); }
+  .bar b { font-weight: 800; }
+  .track { height: 8px; border-radius: 99px; background: var(--line); overflow: hidden; margin-top: 4px; }
+  .fill { height: 8px; border-radius: 99px; }
+  .rel { margin: 16px 0 0; }
+  .note { color: var(--muted); font-size: 14px; margin: 12px 0 0; }
+  .btn { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 54px; border-radius: 16px; font-family: inherit; font-size: 17px; font-weight: 600; line-height: 1.2; text-decoration: none; cursor: pointer; border: 0; margin-top: 12px; }
+  .btn-gold { background: linear-gradient(180deg, var(--gold), var(--gold-deep)); color: #1A1433; }
+  .btn-line { background: transparent; color: var(--text); border: 1px solid var(--line); }
+  .btn[aria-disabled="true"] { opacity: .55; pointer-events: none; }
+  .link { background: none; border: 0; color: var(--gold); font-family: inherit; font-size: 15px; font-weight: 600; cursor: pointer; margin-top: 14px; }
+  footer { margin-top: 32px; color: var(--muted); font-size: 13px; }
+  footer a { color: var(--muted); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="sky" id="sky" aria-hidden="true"></div>
+<main>
+  <img class="logo" src="kozmira.png" alt="" width="64" height="64">
+  <span class="brand">KOZMIRA</span>
+
+  <h1 id="title"></h1>
+  <div class="pair" id="pair" hidden>
+    <div class="person"><div class="badge" id="themBadge"></div><b id="themName"></b><small id="themSign"></small></div>
+    <div class="heart" aria-hidden="true">💞</div>
+    <div class="person"><div class="badge" id="meBadge">?</div><b id="meName"></b><small id="meSign"></small></div>
+  </div>
+
+  <section id="pick" hidden>
+    <p class="lead" id="lead"></p>
+    <div class="signs" id="signs"></div>
+  </section>
+
+  <section id="result" hidden>
+    <div class="card" aria-live="polite">
+      <div class="percent" id="percent"></div>
+      <div class="tier" id="tier"></div>
+      <div id="bars"></div>
+      <p class="rel" id="rel"></p>
+      <p class="note" id="more"></p>
+    </div>
+    <a class="btn btn-gold" id="open" href="#"></a>
+    <a class="btn btn-line" id="ios" href="#"></a>
+    <a class="btn btn-line" id="android" href="#"></a>
+    <p class="note" id="storeNote" role="status"></p>
+    <button class="link" id="change" type="button"></button>
+  </section>
+
+  <section id="invalid" hidden>
+    <p class="lead" id="invalidText"></p>
+    <a class="btn btn-line" id="home" href="../"></a>
+  </section>
+
+  <footer><a href="../gizlilik/" id="privacy"></a> · © 2026 Kozmira</footer>
+</main>
+<script>
+(function () {
+  // Mağaza bağlantıları: uygulama yayımlanınca doldurulacak (boşken düğmeler soluk durur, "yakında" yazar).
+  var STORE = { ios: '', android: '' };
+  var D = {"ids":["koc","boga","ikizler","yengec","aslan","basak","terazi","akrep","yay","oglak","kova","balik"],"symbols":["♈︎","♉︎","♊︎","♋︎","♌︎","♍︎","♎︎","♏︎","♐︎","♑︎","♒︎","♓︎"],"elements":["fire","earth","air","water","fire","earth","air","water","fire","earth","air","water"],"scores":[[[78,78,80,76],[57,56,58,56],[87,86,88,88],[47,50,46,46],[94,94,96,92],[47,46,48,46],[75,74,76,76],[45,48,44,44],[94,94,96,92],[49,48,50,48],[87,86,88,88],[55,58,54,54]],[[57,56,58,56],[77,79,77,74],[57,54,58,60],[86,89,85,83],[49,48,50,48],[93,95,93,90],[47,44,48,50],[74,77,73,71],[47,46,48,46],[93,95,93,90],[49,46,50,52],[86,89,85,83]],[[87,86,88,88],[57,54,58,60],[79,74,80,82],[57,58,56,56],[87,86,88,88],[49,46,50,52],[95,90,96,98],[47,48,46,46],[75,74,76,76],[47,44,48,50],[95,90,96,98],[49,50,48,48]],[[47,50,46,46],[86,89,85,83],[57,58,56,56],[77,82,76,72],[55,58,54,54],[86,89,85,83],[49,50,48,48],[93,98,92,88],[45,48,44,44],[74,77,73,71],[47,48,46,46],[93,98,92,88]],[[94,94,96,92],[49,48,50,48],[87,86,88,88],[55,58,54,54],[78,78,80,76],[57,56,58,56],[87,86,88,88],[47,50,46,46],[94,94,96,92],[47,46,48,46],[75,74,76,76],[45,48,44,44]],[[47,46,48,46],[93,95,93,90],[49,46,50,52],[86,89,85,83],[57,56,58,56],[77,79,77,74],[57,54,58,60],[86,89,85,83],[49,48,50,48],[93,95,93,90],[47,44,48,50],[74,77,73,71]],[[75,74,76,76],[47,44,48,50],[95,90,96,98],[49,50,48,48],[87,86,88,88],[57,54,58,60],[79,74,80,82],[57,58,56,56],[87,86,88,88],[49,46,50,52],[95,90,96,98],[47,48,46,46]],[[45,48,44,44],[74,77,73,71],[47,48,46,46],[93,98,92,88],[47,50,46,46],[86,89,85,83],[57,58,56,56],[77,82,76,72],[55,58,54,54],[86,89,85,83],[49,50,48,48],[93,98,92,88]],[[94,94,96,92],[47,46,48,46],[75,74,76,76],[45,48,44,44],[94,94,96,92],[49,48,50,48],[87,86,88,88],[55,58,54,54],[78,78,80,76],[57,56,58,56],[87,86,88,88],[47,50,46,46]],[[49,48,50,48],[93,95,93,90],[47,44,48,50],[74,77,73,71],[47,46,48,46],[93,95,93,90],[49,46,50,52],[86,89,85,83],[57,56,58,56],[77,79,77,74],[57,54,58,60],[86,89,85,83]],[[87,86,88,88],[49,46,50,52],[95,90,96,98],[47,48,46,46],[75,74,76,76],[47,44,48,50],[95,90,96,98],[49,50,48,48],[87,86,88,88],[57,54,58,60],[79,74,80,82],[57,58,56,56]],[[55,58,54,54],[86,89,85,83],[49,50,48,48],[93,98,92,88],[45,48,44,44],[74,77,73,71],[47,48,46,46],[93,98,92,88],[47,50,46,46],[86,89,85,83],[57,58,56,56],[77,82,76,72]]],"relation":[["same","semi","sextile","square","trine","quincunx","opposite","quincunx","trine","square","sextile","semi"],["semi","same","semi","sextile","square","trine","quincunx","opposite","quincunx","trine","square","sextile"],["sextile","semi","same","semi","sextile","square","trine","quincunx","opposite","quincunx","trine","square"],["square","sextile","semi","same","semi","sextile","square","trine","quincunx","opposite","quincunx","trine"],["trine","square","sextile","semi","same","semi","sextile","square","trine","quincunx","opposite","quincunx"],["quincunx","trine","square","sextile","semi","same","semi","sextile","square","trine","quincunx","opposite"],["opposite","quincunx","trine","square","sextile","semi","same","semi","sextile","square","trine","quincunx"],["quincunx","opposite","quincunx","trine","square","sextile","semi","same","semi","sextile","square","trine"],["trine","quincunx","opposite","quincunx","trine","square","sextile","semi","same","semi","sextile","square"],["square","trine","quincunx","opposite","quincunx","trine","square","sextile","semi","same","semi","sextile"],["sextile","square","trine","quincunx","opposite","quincunx","trine","square","sextile","semi","same","semi"],["semi","sextile","square","trine","quincunx","opposite","quincunx","trine","square","sextile","semi","same"]],"tr":{"docTitle":"Uyumumuza bak 💞 · Kozmira","invitedNoName":"Uyuma davet edildin","lead":"Sen hangi burçsun? Seç, uyumunuzu hemen gör.","you":"Sen","friend":"Arkadaşın","change":"Başka burç seç","signNote":"Bu sonuç yalnızca burçlarınıza göre. Doğum haritalarınızla çok daha ayrıntılı uyum Kozmira'da.","open":"Kozmira'da aç","ios":"App Store'dan indir","android":"Google Play'den indir","soon":"Kozmira çok yakında App Store ve Google Play'de.","notInstalled":"Kozmira bu telefonda yüklü değilse yukarıdaki mağaza düğmelerini kullan.","invalid":"Bu davet bağlantısı açılamadı. Bağlantının tamamını kopyaladığından emin ol.","home":"Kozmira'yı tanı","privacy":"Gizlilik","invited":"{name} seni uyuma davet etti","birthNote":"{name} doğum bilgilerini de gönderdi. Kozmira'da açarsan iki doğum haritası karşılaştırılır: Venüs–Mars çekimi, Ay uyumu ve aranızdaki önemli bağlar.","bars":["Aşk","Arkadaşlık","İletişim"],"percent":"%{n}","tiers":[[98,"Çok yüksek uyum"],[85,"Çok yüksek uyum"],[70,"Yüksek uyum"],[55,"Orta uyum"],[30,"Emek isteyen uyum"]],"relations":{"same":"Aynı burçtan olmanız sizi bir aynanın karşısına koyar. Birbirinizi sözsüz anlarsınız, ama aynı zayıflıkları da paylaşırsınız; birinizin eksiğini diğeri kolay kapatamaz.","semi":"Komşu burçlarsınız. Bakış açılarınız oldukça farklı ama birbirinizi tamamlayabilirsiniz; bu ilişkide uyum zamanla ve emekle büyür.","sextile":"Aranızda altmışlık bir bağ var. Sohbetiniz kolay akar, ortak ilgi alanları bulursunuz; dostça ve destekleyici bir enerji paylaşırsınız.","square":"Aranızda kare açı var. Çekim güçlüdür ama istekleriniz ve ritimleriniz sık sık çatışabilir. Bu ilişki ikinizi de büyütür, yeter ki sabırlı olun.","trine":"Aynı elementin burçlarısınız ve aranızda üçgen açı var. Aranızda doğal bir akış ve kendiliğinden gelen bir anlayış olur; birlikteyken rahat hissedersiniz.","quincunx":"Aranızdaki 150 derecelik açı alışılmadık bir çekim yaratır. Birbirinize merak duyarsınız, ama hayata bakışınızı ve ritimlerinizi uydurmak çaba ister.","opposite":"Karşıt burçlarsınız. Birbirinizi güçlü biçimde çekersiniz; birinizde eksik olan diğerinde vardır. Denge kurabilirseniz son derece tamamlayıcı bir ilişki olur."},"signs":["Koç","Boğa","İkizler","Yengeç","Aslan","Başak","Terazi","Akrep","Yay","Oğlak","Kova","Balık"]},"en":{"docTitle":"Check our compatibility 💞 · Kozmira","invitedNoName":"You've been invited to check your compatibility","lead":"What is your sign? Pick it to see your match right away.","you":"You","friend":"Your friend","change":"Pick another sign","signNote":"This result is based on your sun signs only. A far more detailed match with your birth charts is in Kozmira.","open":"Open in Kozmira","ios":"Download on the App Store","android":"Get it on Google Play","soon":"Kozmira is coming soon to the App Store and Google Play.","notInstalled":"If Kozmira isn't installed on this phone, use the store buttons above.","invalid":"This invite link couldn't be opened. Make sure you copied the whole link.","home":"Discover Kozmira","privacy":"Privacy","invited":"{name} invited you to check your compatibility","birthNote":"{name} also shared their birth details. Open in Kozmira to compare both birth charts: Venus–Mars attraction, Moon harmony and the key bonds between you.","bars":["Love","Friendship","Communication"],"percent":"{n}%","tiers":[[98,"Very high compatibility"],[85,"Very high compatibility"],[70,"High compatibility"],[55,"Moderate compatibility"],[30,"A match that takes work"]],"relations":{"same":"Sharing a sign puts you in front of a mirror. You understand each other without words, but you also share the same weak spots; one of you can’t easily make up for what the other lacks.","semi":"You are neighboring signs. Your outlooks are quite different, but you can complete each other; harmony in this relationship grows with time and effort.","sextile":"There is a sextile between you. Conversation flows easily and you find shared interests; you share a friendly, supportive energy.","square":"There is a square between you. The attraction is strong, but your wants and rhythms can clash often. This relationship helps you both grow, as long as you stay patient.","trine":"You belong to the same element and form a trine. There is a natural flow and an effortless understanding between you; you feel at ease together.","quincunx":"The 150-degree angle between you creates an unusual attraction. You are curious about each other, but aligning your outlooks and rhythms takes effort.","opposite":"You are opposite signs. You attract each other powerfully; what one of you lacks, the other has. If you find balance, it becomes a deeply complementary relationship."},"signs":["Aries","Taurus","Gemini","Cancer","Leo","Virgo","Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"]}};
+  var L = /^tr\b/i.test(navigator.language || '') ? D.tr : D.en;
+  if (L === D.en) { document.documentElement.lang = 'en'; document.getElementById('privacy').setAttribute('href', '../privacy/'); }
+  document.title = L.docTitle;
+  var $ = function (id) { return document.getElementById(id); };
+  var COLORS = { fire: 'var(--fire)', earth: 'var(--earth)', air: 'var(--air)', water: 'var(--water)' };
+
+  // kod: "1|ad|burç|tarih|saat|şehir" (src/lib/invite.ts); doğum bilgisi sayfada gösterilmez
+  function decode(code) {
+    try {
+      var b = code.replace(/-/g, '+').replace(/_/g, '/');
+      while (b.length % 4) b += '=';
+      var bin = atob(b), bytes = new Uint8Array(bin.length);
+      for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+      var f = new TextDecoder('utf-8', { fatal: true }).decode(bytes).split('|');
+      var sign = D.ids.indexOf(f[2]);
+      if (f[0] !== '1' || sign < 0) return null;
+      return { name: (f[1] || '').trim().slice(0, 40), sign: sign, birth: f.length > 3 };
+    } catch (e) { return null; }
+  }
+
+  var code = decodeURIComponent(location.hash.slice(1));
+  var inv = code ? decode(code) : null;
+  ['privacy', 'change', 'open', 'ios', 'android', 'home'].forEach(function (k) { $(k).textContent = L[k]; });
+
+  if (!inv) {
+    $('title').textContent = L.invitedNoName;
+    $('invalidText').textContent = L.invalid;
+    $('invalid').hidden = false;
+    return;
+  }
+
+  var who = inv.name || L.friend;
+  $('title').textContent = inv.name ? L.invited.replace('{name}', inv.name) : L.invitedNoName;
+  $('themBadge').textContent = D.symbols[inv.sign];
+  $('themBadge').style.color = COLORS[D.elements[inv.sign]];
+  $('themName').textContent = who;
+  $('themSign').textContent = L.signs[inv.sign];
+  $('meName').textContent = L.you;
+  $('lead').textContent = L.lead;
+  $('pair').hidden = false;
+  $('pick').hidden = false;
+  $('open').href = 'kozmira://uyum-davet?d=' + encodeURIComponent(code);
+
+  D.ids.forEach(function (_, i) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.innerHTML = '<span></span><small></small>';
+    btn.firstChild.textContent = D.symbols[i];
+    btn.firstChild.style.color = COLORS[D.elements[i]];
+    btn.lastChild.textContent = L.signs[i];
+    btn.onclick = function () { show(i); };
+    $('signs').appendChild(btn);
+  });
+
+  function tier(n) { for (var i = 1; i < L.tiers.length; i++) if (n >= L.tiers[i][0]) return L.tiers[i][1]; return L.tiers[L.tiers.length - 1][1]; }
+  function pct(n) { return L.percent.replace('{n}', n); }
+
+  function show(me) {
+    var s = D.scores[me][inv.sign];
+    $('meBadge').textContent = D.symbols[me];
+    $('meBadge').style.color = COLORS[D.elements[me]];
+    $('meSign').textContent = L.signs[me];
+    $('percent').textContent = pct(s[0]);
+    $('tier').textContent = tier(s[0]);
+    var colors = ['var(--pink)', 'var(--teal)', 'var(--sky)'];
+    $('bars').innerHTML = '';
+    L.bars.forEach(function (label, k) {
+      var row = document.createElement('div');
+      row.className = 'bar';
+      row.innerHTML = '<div><span></span><b></b></div><div class="track"><div class="fill"></div></div>';
+      row.querySelector('span').textContent = label;
+      row.querySelector('b').textContent = pct(s[k + 1]);
+      row.querySelector('b').style.color = colors[k];
+      row.querySelector('.fill').style.width = s[k + 1] + '%';
+      row.querySelector('.fill').style.background = colors[k];
+      $('bars').appendChild(row);
+    });
+    $('rel').textContent = L.relations[D.relation[me][inv.sign]];
+    $('more').textContent = inv.birth ? L.birthNote.replace('{name}', who) : L.signNote;
+    $('pick').hidden = true;
+    $('result').hidden = false;
+    $('result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  $('change').onclick = function () { $('result').hidden = true; $('pick').hidden = false; };
+
+  // uygulama yüklü değilse kozmira:// bağlantısı hiçbir şey açmaz: kısa süre sonra sayfa hâlâ öndeyse not göster
+  $('open').addEventListener('click', function () {
+    setTimeout(function () { if (!document.hidden) $('storeNote').textContent = L.notInstalled; }, 1600);
+  });
+
+  var ua = navigator.userAgent;
+  var isAndroid = /android/i.test(ua), isIOS = /iphone|ipad|ipod/i.test(ua) || (/mac/i.test(ua) && 'ontouchend' in document);
+  if (isIOS) $('android').hidden = true;
+  if (isAndroid) $('ios').hidden = true;
+  var anyStore = false;
+  ['ios', 'android'].forEach(function (k) {
+    var a = $(k);
+    if (STORE[k]) { a.href = STORE[k]; anyStore = true; }
+    else { a.setAttribute('aria-disabled', 'true'); a.removeAttribute('href'); }
+  });
+  if (!anyStore) $('storeNote').textContent = L.soon;
+
+  var sky = $('sky');
+  for (var i = 0; i < 70; i++) {
+    var st = document.createElement('i');
+    st.style.left = Math.random() * 100 + '%';
+    st.style.top = Math.random() * 100 + '%';
+    st.style.animationDelay = (Math.random() * 4).toFixed(2) + 's';
+    if (Math.random() < .15) { st.style.width = st.style.height = '3px'; }
+    sky.appendChild(st);
+  }
+})();
+</script>
+</body>
+</html>
